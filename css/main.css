@@ -10,7 +10,7 @@
   font-family: Arial, Helvetica, sans-serif;
   grid-template-areas: header, content, footer;
   grid-template-columns: auto;
-  grid-template-rows: 50px 100vh auto;
+  grid-template-rows: 50px auto auto;
 }
 
 a {
@@ -29,10 +29,21 @@ ul, li {
 
 .header {
   grid-area: "header";
+  display: flex;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+.header .menu__link {
+  padding: 0.5rem 1rem;
+  color: #333333;
+}
+.header .menu__link:hover {
+  border-bottom: 2px solid #0073e6;
 }
 
 .content {
   grid-area: "content";
+  padding: 0rem 2rem 0rem 2rem;
 }
 .content .caixa {
   align-items: flex-end;
@@ -112,6 +123,10 @@ ul, li {
 
 .footer {
   grid-area: "footer";
+  background-color: #fdfdfd;
+  font-size: 0.8rem;
+  padding: 1rem;
+  text-align: center;
 }
 
 .populares {
