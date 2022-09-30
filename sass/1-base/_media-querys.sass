@@ -1,0 +1,71 @@
+@use 'base-mixins'
+
+//sm devices
+@media screen and (min-width: 0px)
+    .content
+
+        .destaques
+
+            .destaques__principal, .destaques__categorias
+                grid-column: 1 / 5
+
+            &__secundario:nth-child(2)
+                @include base-mixins.invisible-display
+
+            
+            &__secundario:nth-child(3)
+                @include base-mixins.invisible-display
+
+            &__secundario:nth-child(4)
+                @include base-mixins.invisible-display
+
+
+            &__secundario:nth-child(5)
+                @include base-mixins.invisible-display
+
+     
+          
+//md devices
+@media screen and (min-width: 768px)
+    .content
+
+        .destaques
+
+            .destaques__principal
+                grid-column: 1 / 4
+
+            &__secundario:nth-child(2)
+                display: flex
+                grid-column: 4 / 4
+                grid-row: 1 / 1
+
+            
+            &__secundario:nth-child(3)
+                display: flex
+                grid-column: 4 / 4
+                grid-row: 2 / 2
+               
+
+            &__secundario:nth-child(4)
+                display: flex
+                grid-column: 4 / 4
+                grid-row: 3 / 3
+                
+
+
+            &__secundario:nth-child(5)
+                display: flex
+                grid-column: 3 / 3
+                grid-row: 3 / 3
+               
+
+            .destaques__categorias
+                grid-column: 1 / 3
+
+//lg devices
+@media screen and (min-width: 992px)
+
+
+//xl devices
+@media screen and (min-width: 1200px)
+
